@@ -41,7 +41,7 @@ def search_finance_treasury(company_name, size=20):
     def get_title(p): return p.get("experience", [{}])[0].get("title", "") if p.get("experience") else ""
     return sorted(profiles, key=lambda p: get_seniority_rank(get_title(p)))[:10]
 
-@app.route('/', methods=['POST'])
+@app.route('/', methods=['POST', 'GET'])
 def callback():
     print("\n" + "═"*80)
     print(f"CALLBACK RECEIVED {time.strftime('%Y-%m-%d %H:%M:%S')}")
