@@ -2086,7 +2086,7 @@ RESULTS_FILE  = "/tmp/signalhire_results.json"                  # shared with we
 
 
 
-API_KEY = "202.M3D7xK6FykhOIHuKoFGLLjMI8jwW"
+API_KEY = "YOUR_API_KEY"
 BASE_URL = "https://www.signalhire.com/api/v1"
 SEARCH_ENDPOINT = "/candidate/searchByQuery"
 PERSON_ENDPOINT = "/candidate/search"
